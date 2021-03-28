@@ -10,8 +10,7 @@ import UIKit
 
 protocol FriendsViewModelDelegate: AnyObject {
     func refreshFriendList()
-    func showErrorMessage()
-    func refreshFriendImages()
+    func showError(message: String)
 }
 
 class FriendsViewModel {
@@ -44,7 +43,7 @@ class FriendsViewModel {
                                         self.friendsResponse = friendsResponseModel
                                         self.pullImages()
                                      }, failureBlock: { (error) in
-                                        
+                                        self.delegate?.showError(message:error.description)
                                      })
     }
     

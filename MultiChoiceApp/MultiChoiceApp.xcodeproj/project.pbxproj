@@ -30,7 +30,6 @@
 		0DCF31D7260FD9640009B7BC /* FriendsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF31D6260FD9640009B7BC /* FriendsResponseModel.swift */; };
 		0DCF31E52610CD240009B7BC /* FriendDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF31E42610CD240009B7BC /* FriendDetailsViewController.swift */; };
 		0DCF31F42610CD5B0009B7BC /* FriendDetailsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCF31F32610CD5B0009B7BC /* FriendDetailsScreen.storyboard */; };
-		0DCF31FB2610FF170009B7BC /* FriendDetailsAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF31FA2610FF160009B7BC /* FriendDetailsAnimator.swift */; };
 		0DCF3200261100680009B7BC /* FriendDetailsSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCF31FF261100680009B7BC /* FriendDetailsSegue.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +80,6 @@
 		0DCF31D6260FD9640009B7BC /* FriendsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsResponseModel.swift; sourceTree = "<group>"; };
 		0DCF31E42610CD240009B7BC /* FriendDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsViewController.swift; sourceTree = "<group>"; };
 		0DCF31F32610CD5B0009B7BC /* FriendDetailsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FriendDetailsScreen.storyboard; sourceTree = "<group>"; };
-		0DCF31FA2610FF160009B7BC /* FriendDetailsAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsAnimator.swift; sourceTree = "<group>"; };
 		0DCF31FF261100680009B7BC /* FriendDetailsSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailsSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,8 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				0DCF31E32610CD080009B7BC /* View */,
-				0DCF31EC2610CD270009B7BC /* View Model */,
-				0DCF31FA2610FF160009B7BC /* FriendDetailsAnimator.swift */,
 			);
 			path = "Friend Details Screen";
 			sourceTree = "<group>";
@@ -277,18 +273,11 @@
 		0DCF31E32610CD080009B7BC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0DCF31E42610CD240009B7BC /* FriendDetailsViewController.swift */,
 				0DCF31F32610CD5B0009B7BC /* FriendDetailsScreen.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0DCF31EC2610CD270009B7BC /* View Model */ = {
-			isa = PBXGroup;
-			children = (
+				0DCF31E42610CD240009B7BC /* FriendDetailsViewController.swift */,
 				0DCF31FF261100680009B7BC /* FriendDetailsSegue.swift */,
 			);
-			path = "View Model";
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,7 +429,6 @@
 				0D7FDB3E26015FE600E3AA27 /* FriendsService.swift in Sources */,
 				0DCF31D7260FD9640009B7BC /* FriendsResponseModel.swift in Sources */,
 				0DCF31CA260FD1E80009B7BC /* FriendsCollectionViewCell.swift in Sources */,
-				0DCF31FB2610FF170009B7BC /* FriendDetailsAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

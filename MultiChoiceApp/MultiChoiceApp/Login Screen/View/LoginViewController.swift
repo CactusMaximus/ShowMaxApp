@@ -32,7 +32,6 @@ class LoginViewController: UIViewController {
                let targetController = destVC.topViewController as? FriendsViewController {
                 targetController.set(dataTransportModel: viewModel.dataTransportModel)
             }
-            
         }
     }
     

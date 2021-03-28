@@ -34,7 +34,6 @@ class FriendsCollectionViewCell: UICollectionViewCell {
     
     public func updateImage(image: UIImage) {
         backgroundImageView.image = image
-        layoutIfNeeded()
     }
     
     @IBAction func infoButtonTapped(_ sender: Any) {
