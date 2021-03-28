@@ -16,15 +16,14 @@ protocol FriendsViewModelDelegate: AnyObject {
 
 class FriendsViewModel {
     
-    var task: URLSessionDownloadTask!
-    var session: URLSession!
-    
     private weak var delegate: FriendsViewModelDelegate?
     private var friendsService: FriendsServiceContract?
     private var dataTransportModel: ApplicationTransportModel?
     private(set) var friendsResponse: FriendsResponseModel?
     private(set) var selectedFriendDetails: FriendDetails?
-    var totalImagesDownloaded = 0
+    private var task: URLSessionDownloadTask!
+    private var session: URLSession!
+    private var totalImagesDownloaded = 0
     
     init(delegate: FriendsViewModelDelegate,
          dataTransportModel: ApplicationTransportModel,
@@ -76,7 +75,12 @@ class FriendsViewModel {
             if let data = try? Data(contentsOf: url){
                 DispatchQueue.main.async(execute: { () -> Void in
                     let image: UIImage! = UIImage(data: data)
+                    if image.size.width > 100 {
+                        guard let compressedImageData = image.jpegData(compressionQuality: 0.1) else { return }
+                        self.friendsResponse?.friends[index].image = UIImage(data: compressedImageData) ?? UIImage()
+                    } else {
                         self.friendsResponse?.friends[index].image = image
+                    }
                     DispatchQueue.main.async {
                         self.delegate?.refreshFriendList()
                         self.totalImagesDownloaded += 1
@@ -84,7 +88,7 @@ class FriendsViewModel {
                             self.delegate?.stopLoadingIndicator()
                         }
                     }
-         
+                    
                 })
             }
         })
