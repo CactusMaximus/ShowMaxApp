@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scrollingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="yHG-tU-AuL">
+                                <rect key="frame" x="-500" y="0.0" width="875" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showMaxLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LHA-8V-dVC">
+                                <rect key="frame" x="20" y="44" width="335" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="aTl-th-YWG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.34680897424007529" green="0.36271188463807114" blue="0.35567085749495037" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="yHG-tU-AuL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="1C5-AT-05m"/>
+                            <constraint firstItem="LHA-8V-dVC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2ZB-oe-dYA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LHA-8V-dVC" secondAttribute="trailing" constant="20" id="6om-6k-76O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yHG-tU-AuL" secondAttribute="trailing" id="Yas-G0-mWL"/>
+                            <constraint firstAttribute="bottom" secondItem="yHG-tU-AuL" secondAttribute="bottom" id="f2b-mV-k9r"/>
+                            <constraint firstItem="LHA-8V-dVC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oBg-Mp-TJx"/>
+                            <constraint firstItem="yHG-tU-AuL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-500" id="pRS-oI-2zW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="scrollingBackground" width="413.33334350585938" height="232.66667175292969"/>
+        <image name="showMaxLogo" width="549.66668701171875" height="274.66665649414062"/>
+    </resources>
+</document>

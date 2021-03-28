@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hXR-0n-vEc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Friend Details-->
+        <scene sceneID="aCZ-8d-WdD">
+            <objects>
+                <viewController title="Friend Details" interfaceStyle="light" id="hXR-0n-vEc" customClass="FriendDetailsViewController" customModule="MultiChoiceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MGx-Ay-IW1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showMaxLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ID0-vu-mJQ">
+                                <rect key="frame" x="20" y="64" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="XET-c4-cPY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alias Placeholder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8U-xd-9Yn">
+                                <rect key="frame" x="20" y="284" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="0.97492217989999996" green="1" blue="0.98579706119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jeC-lL-g39">
+                                <rect key="frame" x="40" y="350.5" width="334" height="146"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-AP-ugK">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.97492217989999996" green="1" blue="0.98579706119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uN1-XA-DOD">
+                                        <rect key="frame" x="0.0" y="41.5" width="88" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.97492217989999996" green="1" blue="0.98579706119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESj-sR-Gb6">
+                                        <rect key="frame" x="0.0" y="83" width="83.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.97492217989999996" green="1" blue="0.98579706119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szL-yu-DuX">
+                                        <rect key="frame" x="0.0" y="124.5" width="56.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.97492217989999996" green="1" blue="0.98579706119999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="showMaxLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GBR-4Z-ljJ">
+                                <rect key="frame" x="87" y="714" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="kOw-lr-KvF"/>
+                                    <constraint firstAttribute="width" constant="240" id="oX3-JP-ftZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SG3-DB-MfE"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SG3-DB-MfE" firstAttribute="trailing" secondItem="ID0-vu-mJQ" secondAttribute="trailing" constant="20" id="4p0-7c-Sd9"/>
+                            <constraint firstItem="j8U-xd-9Yn" firstAttribute="leading" secondItem="SG3-DB-MfE" secondAttribute="leading" constant="20" id="6L7-8z-KN3"/>
+                            <constraint firstItem="GBR-4Z-ljJ" firstAttribute="centerX" secondItem="SG3-DB-MfE" secondAttribute="centerX" id="DYg-yJ-Ofs"/>
+                            <constraint firstItem="ID0-vu-mJQ" firstAttribute="leading" secondItem="SG3-DB-MfE" secondAttribute="leading" constant="20" id="L1S-oE-4Tc"/>
+                            <constraint firstItem="SG3-DB-MfE" firstAttribute="trailing" secondItem="j8U-xd-9Yn" secondAttribute="trailing" constant="20" id="P77-LP-DB6"/>
+                            <constraint firstItem="SG3-DB-MfE" firstAttribute="bottom" secondItem="GBR-4Z-ljJ" secondAttribute="bottom" constant="20" id="REC-s2-UEk"/>
+                            <constraint firstItem="ID0-vu-mJQ" firstAttribute="top" secondItem="SG3-DB-MfE" secondAttribute="top" constant="20" id="Yl3-vg-lMT"/>
+                            <constraint firstItem="j8U-xd-9Yn" firstAttribute="top" secondItem="ID0-vu-mJQ" secondAttribute="bottom" constant="20" id="b5U-iC-LVL"/>
+                            <constraint firstItem="jeC-lL-g39" firstAttribute="leading" secondItem="SG3-DB-MfE" secondAttribute="leading" constant="40" id="pgx-HG-Vvh"/>
+                            <constraint firstItem="jeC-lL-g39" firstAttribute="top" secondItem="j8U-xd-9Yn" secondAttribute="bottom" constant="40" id="t2N-W9-9IV"/>
+                            <constraint firstItem="SG3-DB-MfE" firstAttribute="trailing" secondItem="jeC-lL-g39" secondAttribute="trailing" constant="40" id="z1e-TF-aEG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aliasLabel" destination="j8U-xd-9Yn" id="pLG-Rt-k0G"/>
+                        <outlet property="birthDateLabel" destination="ESj-sR-Gb6" id="D0w-uS-FcV"/>
+                        <outlet property="firstNameLabel" destination="ba6-AP-ugK" id="QTi-G9-kQ5"/>
+                        <outlet property="friendImageView" destination="ID0-vu-mJQ" id="ViS-ZX-Qop"/>
+                        <outlet property="lastNameLabel" destination="uN1-XA-DOD" id="KFH-Dk-MnX"/>
+                        <outlet property="logoImageView" destination="GBR-4Z-ljJ" id="BbT-x6-IjS"/>
+                        <outlet property="statusLabel" destination="szL-yu-DuX" id="rGq-fj-BHQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYQ-yG-t0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="showMaxLogo" width="824.5" height="412"/>
+    </resources>
+</document>
