@@ -19,9 +19,9 @@ class FriendDetailsSegue: UIStoryboardSegue {
         UIView.animate(withDuration: 0.4, animations: { () -> Void in
             firstView.transform = secondView.transform.scaledBy(x: 0.001, y: 0.001)
         }) { (Finished) -> Void in
-            UIView.animate(withDuration: 0.4, animations: { () -> Void in
+            UIView.animate(withDuration: 3, animations: { () -> Void in
                 secondView.alpha = 1
-                self.source.present(self.destination as UIViewController, animated: true, completion: nil)
+                self.source.present(self.destination as UIViewController, animated: false, completion: nil)
             }, completion: { (Finished) -> Void in
                 UIView.animate(withDuration: 1) {
                     firstView.transform = CGAffineTransform.identity

@@ -36,6 +36,11 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" id="Bsw-nF-Fgp">
+                                <rect key="frame" x="0.0" y="86" width="414" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4UG-vC-Npn"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -50,6 +55,7 @@
                     <navigationItem key="navigationItem" title="Friends" id="poX-pe-ccz"/>
                     <connections>
                         <outlet property="friendsCollectionView" destination="AjB-PF-ak8" id="4wT-SM-snF"/>
+                        <outlet property="loadingIndicator" destination="Bsw-nF-Fgp" id="9cr-ZG-H0J"/>
                         <segue destination="xBf-7s-iUV" kind="custom" identifier="FriendDetailsSegue" customClass="FriendDetailsSegue" customModule="MultiChoiceApp" customModuleProvider="target" id="0sZ-kD-4Z5"/>
                     </connections>
                 </viewController>

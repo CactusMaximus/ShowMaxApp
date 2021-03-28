@@ -10,6 +10,7 @@ import UIKit
 class FriendsViewController: UIViewController {
     
     @IBOutlet var friendsCollectionView: UICollectionView!
+    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     
     private var dataTransportModel: ApplicationTransportModel?
     private lazy var viewModel = FriendsViewModel(delegate: self,
@@ -24,6 +25,7 @@ class FriendsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadingIndicator.startAnimating()
         friendsCollectionView.dataSource = self
         friendsCollectionView.delegate = self
         friendsCollectionView.register(UINib.init(nibName: "FriendsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CustomFriendCell")
@@ -40,6 +42,10 @@ class FriendsViewController: UIViewController {
 }
 
 extension FriendsViewController: FriendsViewModelDelegate {
+    func stopLoadingIndicator() {
+        loadingIndicator.stopAnimating()
+    }
+    
     func refreshFriendList() {
         friendsCollectionView.reloadData()
     }
